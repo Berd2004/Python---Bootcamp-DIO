@@ -18,3 +18,6 @@ print(type(bool_numero))  # Mostra o tipo de dado booleano
 
 bool_numero = False
 print(type(bool_numero))  # Mostra o tipo de dado booleano falso
+
+bool_numero = False
+print(type(bool_numero))  # Mostra o tipo de dado booleano falso
