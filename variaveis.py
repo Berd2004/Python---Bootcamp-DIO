@@ -16,5 +16,6 @@ print(type(int_numero))  # Mostra o tipo de dado inteiro
 bool_numero = True
 print(type(bool_numero))  # Mostra o tipo de dado booleano
 
-
+bool_numero = False
+print(type(bool_numero))  # Mostra o tipo de dado booleano falso
 
