@@ -1,6 +1,5 @@
 # Converter tipo de dados (int --> float etc...)
 
-
 # inteiro ---> float
 inteiro = 20
 
