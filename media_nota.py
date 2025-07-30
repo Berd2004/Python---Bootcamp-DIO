@@ -1,10 +1,10 @@
-n1 = float(input("Digite a primeira nota: "))
+n1 = input("Digite a primeira nota: ")
 
-n2 = float(input("Digite a segunda nota: "))
+n2 = input("Digite a segunda nota: ")
 
 
 
-MediaNotas = (n1 + n2) /2
+MediaNotas = float(n1 + n2) /2
 
 print("A média das notas é: ", MediaNotas)
 
