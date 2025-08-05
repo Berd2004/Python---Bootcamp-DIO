@@ -47,7 +47,6 @@ else:
     print("Cupom inválido.")
     
 
-    
     # Entrada do usuário
 preco = 100
 cupom = "SEM_DESCONTO"
