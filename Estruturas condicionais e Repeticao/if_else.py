@@ -16,7 +16,7 @@ opcao = int(input("\n [1] SACAR \n [2] Extrato \n Informe uma opção: "))
 
 if opcao == 1:
     valor_saque = float(input("Informe a quantia para o saque: "))
-    if valor_saque >= valor_conta:  
+    if valor_saque > valor_conta:  
         print("Operação inválida! Não é possivel sacar mais do que o valor dispovível em conta. tente novamente!")
     else: 
         calculo_saque = (valor_conta - valor_saque)   
@@ -28,7 +28,8 @@ elif opcao == 2:    #elif - é a combinação de else + if. Testa outra condiç�
     time.sleep(2)  
     print("extrato") 
     
-else:           #caso nenhuma condição seja atendida, ele age como exceção
+    
+else:               #caso nenhuma condição seja atendida, ele age como exceção
     sys.exit("opção inválida!!!")     
     
     
