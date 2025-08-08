@@ -16,7 +16,7 @@ while True:
         saldo += deposito
         extrato += f"Depósito: R$ {deposito:.2f}\n"
         
-        
+    
     elif opcao == "s":
         saque = float(input("Digite o valor do saque: "))
         
@@ -25,10 +25,10 @@ while True:
         if saque > limite :
             print("Seu valor excede o limite de R$500. Tente Novamente!")
             
-        if excedeu_saques:
+        elif excedeu_saques:
             print("Seu limite de 3 saques diários foi excedido") 
                
-        if saque > saldo:
+        elif saque > saldo:
             print("Não é possivel sacar mais do que o seu saldo!")    
                   
         elif saque > 0:
@@ -36,19 +36,30 @@ while True:
             numero_saques += 1
             extrato += f"Saque: R$ {saque:.2f}\n"
             
+        else:
+            print("Valor inválido para saque!")    
             
     elif opcao == "e":
         
         print("-----------------Extrato-------------------- \n")
+        
+        if not extrato:
+            print("Não foram realizadas movimentações.")
+        else:
+            print(extrato) 
+            
         print(f"O seu saldo é: {saldo:.2f} \n") 
         print(f"Você realizou {numero_saques} saques")
         print("--------------------------------------------")
         
-    
-    
     elif opcao == "q":
         print("-----------------Extrato-------------------- \n")
-        print(f"O seu saldo é: {saldo:.2f} \n") 
+        if not extrato:
+            print("Não foram realizadas movimentações.")
+            
+        else:
+            print(extrato)    
+        print(f"O seu saldo é: {saldo:.2f} \n reais") 
         print(f"Você realizou {numero_saques} saques")
         print("--------------------------------------------")
         
